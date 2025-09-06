@@ -97,6 +97,10 @@ function M.resize_right()
     resize("l")
 end
 
+function M.close_window()
+    nvim:close_window()
+end
+
 function M.set_move_keymaps()
     vim.keymap.set({ "n", "t" }, "<c-h>", M.move_left, {})
     vim.keymap.set({ "n", "t" }, "<c-j>", M.move_down, {})
@@ -109,6 +113,10 @@ function M.set_resize_keymaps()
     vim.keymap.set({ "n", "t" }, "<c-m-j>", M.resize_down, {})
     vim.keymap.set({ "n", "t" }, "<c-m-k>", M.resize_up, {})
     vim.keymap.set({ "n", "t" }, "<c-m-l>", M.resize_right, {})
+end
+
+function M.set_close_keymaps()
+    vim.keymap.set({ "n", "t" }, "<c-s-w>", M.close_window, {})
 end
 
 return M

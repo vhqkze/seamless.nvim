@@ -29,4 +29,8 @@ function nvim:resize(direction, not_last_window)
     end
 end
 
+function nvim:close_window()
+    vim.api.nvim_win_close(0, false)
+end
+
 return nvim

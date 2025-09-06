@@ -11,6 +11,7 @@ local M = {
     resize_down = core.resize_down,
     resize_up = core.resize_up,
     resize_right = core.resize_right,
+    close_window = core.close_window,
 }
 
 function M.setup(args)
@@ -24,6 +25,9 @@ function M.setup(args)
     end
     if config.resize.enable_default_keymaps then
         core.set_resize_keymaps()
+    end
+    if config.close.enable_default_keymaps then
+        core.set_close_keymaps()
     end
 end
 
