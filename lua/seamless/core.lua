@@ -116,7 +116,7 @@ function M.set_resize_keymaps()
 end
 
 function M.set_close_keymaps()
-    vim.keymap.set({ "n", "t" }, "<c-s-w>", M.close_window, {})
+    vim.keymap.set({ "n", "t" }, "<m-ŵ>", M.close_window, {})
 end
 
 return M

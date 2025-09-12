@@ -14,7 +14,7 @@ def handle_result(args: list[str], result: str, target_window_id: int, boss: Bos
         return
     cmd = window.child.foreground_cmdline[0]
     if cmd in ['tmux', 'nvim', 'ssh', '/usr/bin/ssh']:
-        _ = window.send_key('ctrl+shift+w')
+        _ = window.send_key('alt+ŵ')
     else:
         # boss.close_window_with_confirmation()
         window.close()
