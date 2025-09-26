@@ -6,6 +6,7 @@ local MULTIPLEXER_ADAPTERS = {
 
 local TERMINAL_ADAPTERS = {
     "seamless.adapters.terminal.kitty",
+    "seamless.adapters.terminal.wezterm",
 }
 
 local loaded_multiplexer_adapters = {}
